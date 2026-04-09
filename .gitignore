@@ -1,0 +1,14 @@
+venv/
+backend/venv/
+
+__pycache__/
+*.pyc
+
+.env
+
+*.db
+*.sqlite3
+
+instance/
+
+models/

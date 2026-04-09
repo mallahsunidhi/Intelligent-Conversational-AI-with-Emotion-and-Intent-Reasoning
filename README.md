@@ -1,30 +1,156 @@
-# EmotiChat - Fixed Backend
+# 🧠 Intelligent Conversational AI with Emotion & Intent Reasoning
 
-This is a repaired version of the uploaded project.
+Most chatbots respond the same way to every user.
+This system doesn’t.
 
-## What was fixed
-- Added a complete Flask app in `backend/main.py`
-- Added database setup
-- Added working routes for chat and analytics
-- Added CSV export and heatmap generation
-- Added fallback response logic when Ollama is not installed/running
-- Added a basic HTML chat page
-- Cleaned imports and app startup logic
+It understands:
 
-## Run
+* **User Emotion** (anxiety, love, frustration, etc.)
+* **User Intent** (advice, support, information)
+* **Underlying Need** (guidance, reassurance, clarity)
+
+Then it generates **context-aware, human-like responses** using LLMs.
+
+---
+
+## 🔍 Project Overview
+
+This project is an advanced conversational AI system that combines:
+
+* Emotion Detection
+* Intent Classification
+* Context Memory
+* Rule-based + LLM hybrid reasoning
+
+Unlike traditional chatbots, this system adapts its response based on how the user feels and what they need.
+
+---
+
+## ⚙️ Tech Stack
+
+* **Backend:** Flask
+* **Frontend:** Streamlit
+* **LLM:** Llama 3.2 (via Ollama)
+* **Database:** SQLite
+* **Analytics:** Pandas, Matplotlib
+
+---
+
+## 🚀 Key Features
+
+* 💬 Emotion-aware conversations
+* 🎯 Intent-based response generation
+* 🧠 Context memory using session tracking
+* 📊 Real-time analytics dashboard
+* 📈 Emotion heatmaps & session insights
+* 🔁 Hybrid system (Rule-based + LLM)
+* 🛠️ Fallback responses if LLM is unavailable
+
+---
+
+## 🏗️ Project Structure
+
+```
+emotionchat/
+│
+├── backend/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── analytics.py
+│
+├── frontend/
+│   ├── app.py
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mallahsunidhi/Intelligent-Conversational-AI-with-Emotion-and-Intent-Reasoning.git
+cd Intelligent-Conversational-AI-with-Emotion-and-Intent-Reasoning
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the backend
+
 ```bash
 cd backend
-pip install -r requirements.txt
 python main.py
 ```
 
-Open: http://127.0.0.1:5000
+Open in browser:
 
-## Optional Ollama
-If you want real LLM responses:
-1. Install Ollama
-2. Run `ollama serve`
-3. Pull a model: `ollama pull llama3.2`
-4. Start the Flask app
+```
+http://127.0.0.1:5000
+```
 
-If Ollama is not running, the app still works using fallback replies.
+---
+
+## 🤖 Optional: Enable LLM (Ollama)
+
+To get real AI-generated responses:
+
+```bash
+ollama serve
+ollama pull llama3.2
+```
+
+If Ollama is not running, the system will still work using fallback responses.
+
+---
+
+## 📊 Analytics & Insights
+
+The system tracks:
+
+* Emotion distribution across conversations
+* User interaction patterns
+* Session-based insights
+
+Visualizations include:
+
+* Emotion heatmaps
+* Real-time interaction graphs
+
+---
+
+## 💡 Why This Project Matters
+
+Most chatbots ignore user emotions.
+This system attempts to bridge that gap by making AI more:
+
+* Human-like
+* Context-aware
+* Emotion-sensitive
+
+It’s a step toward emotionally intelligent AI systems.
+
+---
+
+## 🔮 Future Improvements
+
+* Advanced emotion detection using ML models
+* Voice-based interaction
+* Multi-language support
+* Deployment on cloud (AWS / Azure)
+* Integration with real-time chat platforms
+
+---
+
+## 📌 Author
+
+**Sunidhi Mallah**
+Aspiring Data Analyst & AI Developer
